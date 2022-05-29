@@ -30,8 +30,20 @@
     box-shadow: 0 0.125rem 0.25rem rgb(0 0 0 / 3%);
   }
 
+  #side-item {
+    display: none;
+  }
+
   .side-bar-icons {
     display: block;
+  }
+
+  #inner {
+    padding: 7rem 0 2rem;
+  }
+
+  #col-inner-text {
+    order: 1;
   }
 
   .about-mydesign-header {
@@ -95,8 +107,20 @@
     display: block;
   }
 
+  #inner {
+    padding: 7rem 0 2rem;
+  }
+
+  #col-inner-text {
+    order: 1;
+  }
+
   .name-male {
     flex-direction: column;
+  }
+
+  #side-item {
+    display: none;
   }
 }
 
@@ -132,8 +156,16 @@
     box-shadow: 0 0.125rem 0.25rem rgb(0 0 0 / 3%);
   }
 
+  #side-item {
+    display: none;
+  }
+
   .side-bar-icons {
     display: block;
+  }
+
+  #inner {
+    padding: 7rem 0 2rem;
   }
 
   #col-inner-text {
