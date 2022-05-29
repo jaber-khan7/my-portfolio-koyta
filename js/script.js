@@ -151,7 +151,7 @@ function pricingTable(iconId, categoryName, price) {
       <!-- order now -->
       <button class="order-now">
         <i class="fa-solid fa-dollar-sign"></i>
-        <span>${price}</span><span>Order</span>
+        <span>${price}</span> <span>Order</span>
       </button>
     </div>
   `;
@@ -161,7 +161,7 @@ function pricingTable(iconId, categoryName, price) {
 }
 
 pricingTable(1, "Silver", 30);
-pricingTable(2, "Enterprise", 750);
+pricingTable(2, "Enterprise", 75);
 pricingTable(3, "Golden", 120);
 
 function contactAddress(iconId, title, address1, address2) {
@@ -201,3 +201,27 @@ contactAddress(
   "FA - 154 Careon Street,",
   "California, USA"
 );
+
+const aboutmeSideBar = document.getElementById("aboutme-side-bar");
+aboutmeSideBar.style.display = "none";
+
+// about side bar
+const aboutSideBar = document.getElementById("about-side-bar");
+
+// about x-mark
+const hideSidebar = document.getElementById("about-x-mark");
+hideSidebar.style.display = "none";
+
+// show side bar
+aboutSideBar.addEventListener("click", function () {
+  aboutmeSideBar.style.display = "block";
+  hideSidebar.style.display = "block";
+  aboutSideBar.style.display = "none";
+});
+
+// hide side bar
+hideSidebar.addEventListener("click", function () {
+  aboutmeSideBar.style.display = "none";
+  hideSidebar.style.display = "none";
+  aboutSideBar.style.display = "block";
+});

@@ -8,7 +8,7 @@
 }
 
 /* google fonts */
-@import url("https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;500;600;700&family=Poppins:wght@200;300;400;500;600;700&family=Roboto&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;500;600;700&family=Poppins:wght@200;300;400;500;600;700&family=Roboto:wght@300;400&display=swap");
 
 /* utilities */
 * {
@@ -127,6 +127,10 @@ li.nav-item.active a {
 
 .side-bar-icons {
   display: none;
+}
+
+.about-side-bar-icons {
+  width: 1.5rem;
 }
 
 #side-bar,
@@ -550,4 +554,15 @@ footer {
   background-color: var(--color-primary);
   border-radius: 50%;
   color: var(--color-white);
+}
+
+/* about me side bar */
+aside {
+  max-width: 600px;
+  position: fixed;
+  background-color: var(--color-white);
+  top: 90px;
+  right: 0;
+  padding: 1.7rem;
+  z-index: 1033;
 }
