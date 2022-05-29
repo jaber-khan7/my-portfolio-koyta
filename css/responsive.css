@@ -1,0 +1,159 @@
+/* extra small device */
+@media screen and (max-width: 575px) {
+  h1 {
+    font-size: 2rem;
+  }
+
+  .nav {
+    position: relative;
+  }
+
+  .nav-links {
+    width: 100%;
+    display: none;
+    position: absolute;
+    flex-direction: column;
+    align-items: center;
+    bottom: 0;
+    padding: 0;
+    transform: translateY(100%);
+  }
+
+  .nav-item {
+    width: 100%;
+    text-align: center;
+    padding: 1rem 0;
+    box-shadow: 0 0.125rem 0.25rem rgb(0 0 0 / 3%);
+  }
+
+  .side-bar-icons {
+    display: block;
+  }
+
+  .about-mydesign-header {
+    padding: 1rem 0;
+  }
+
+  .about-myservice {
+    padding-bottom: 2rem;
+  }
+
+  .about-myservice > h6 {
+    font-size: 1.1rem;
+  }
+
+  .skill > h6 {
+    font-size: 1rem;
+  }
+
+  .name-male {
+    flex-direction: column;
+  }
+
+  .social-item {
+    margin: 0 0.2rem;
+  }
+}
+
+/* small device */
+@media screen and (min-width: 576px) and (max-width: 767px) {
+  h1 {
+    font-size: 2.3rem;
+  }
+
+  .nav {
+    position: relative;
+  }
+
+  .nav-links {
+    width: 100%;
+    display: none;
+    position: absolute;
+    flex-direction: column;
+    align-items: center;
+    bottom: 0;
+    padding: 0;
+    transform: translateY(100%);
+  }
+
+  .nav-item {
+    width: 100%;
+    text-align: center;
+    padding: 1rem 0;
+    box-shadow: 0 0.125rem 0.25rem rgb(0 0 0 / 3%);
+  }
+
+  .side-bar-icons {
+    display: block;
+  }
+
+  .name-male {
+    flex-direction: column;
+  }
+}
+
+/* medium device */
+@media screen and (min-width: 768px) and (max-width: 991px) {
+  h1 {
+    font-size: 2.6rem;
+  }
+
+  .nav {
+    position: relative;
+  }
+
+  .nav-links {
+    width: 100%;
+    display: none;
+    position: absolute;
+    flex-direction: column;
+    align-items: center;
+    bottom: 0;
+    padding: 0;
+    transform: translateY(100%);
+  }
+
+  .nav-item {
+    width: 100%;
+    text-align: center;
+    padding: 1rem 0;
+    box-shadow: 0 0.125rem 0.25rem rgb(0 0 0 / 3%);
+  }
+
+  .side-bar-icons {
+    display: block;
+  }
+
+  #col-inner-text {
+    order: 1;
+  }
+
+  .go-top {
+    right: 6%;
+    bottom: 10%;
+  }
+}
+
+/* large device */
+@media screen and (min-width: 992px) and (max-width: 1199px) {
+  .about-myservice {
+    padding-right: 2rem;
+  }
+
+  .go-top {
+    right: 7%;
+    bottom: 10%;
+  }
+}
+
+/* extra large device */
+@media screen and (min-width: 1200px) {
+  .about-myservice {
+    padding-right: 2.5rem;
+  }
+
+  .go-top {
+    right: 7%;
+    bottom: 10%;
+  }
+}

@@ -1,0 +1,553 @@
+/* css variables */
+:root {
+  --color-primary: #e03b8b;
+  --color-secondary: #242b2e;
+  --color-white: #fff;
+  --color-gray: #758283;
+  --shadow-sm: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075);
+}
+
+/* google fonts */
+@import url("https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;500;600;700&family=Poppins:wght@200;300;400;500;600;700&family=Roboto&display=swap");
+
+/* utilities */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  font-family: "Poppins", sans-serif;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+}
+
+h1 {
+  font-size: 3rem;
+  font-weight: 700;
+}
+
+h2 {
+  font-size: 2.3rem;
+  font-weight: 500;
+}
+
+h3 {
+  font-size: 2.2rem;
+  letter-spacing: 1px;
+  font-weight: 500;
+}
+
+h4 {
+  font-size: 1.4rem;
+  font-weight: 500;
+  padding: 2rem 0;
+}
+
+h6 {
+  font-size: 1.3rem;
+  font-weight: 400;
+}
+
+p {
+  font-family: "Roboto", sans-serif;
+  font-size: 1rem;
+}
+
+a {
+  color: var(--color-secondary);
+  text-decoration: none;
+  transition: all 300ms;
+}
+
+a:hover {
+  color: var(--color-primary);
+}
+
+ul li {
+  list-style: none;
+}
+
+button {
+  padding: 7px 30px;
+  background-color: var(--color-primary);
+  border: 2px solid var(--color-primary);
+  color: var(--color-white);
+  font-size: 1.1rem;
+  transition: all 300ms;
+}
+
+button:hover {
+  background-color: var(--color-white);
+  color: var(--color-primary);
+}
+
+section {
+  padding: 80px 0;
+}
+
+.upper-case {
+  text-transform: uppercase;
+}
+
+/* nav bar section */
+.nav-bar {
+  width: 100%;
+  position: fixed;
+  background-color: var(--color-white);
+  z-index: 1033;
+}
+.nav {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  height: 90px;
+}
+
+.nav-links {
+  flex-basis: 60%;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  background-color: var(--color-white);
+}
+
+.nav-item {
+  display: inline-block;
+  font-size: 1.1rem;
+  color: var(--color-secondary);
+}
+
+li.nav-item.active a {
+  color: var(--color-primary);
+}
+
+.side-bar-icons {
+  display: none;
+}
+
+#side-bar,
+#x-mark i {
+  font-size: 1.5rem;
+  padding: 10px;
+}
+
+/* ================= inner section start ================= */
+.about-me-photo {
+  max-width: 450px;
+  padding: 1.5rem;
+  border-radius: 10px;
+}
+
+.image-background {
+  background: linear-gradient(45deg, #00000010, #00000005);
+}
+
+/* ================== main section start ================== */
+/*  about me section start  */
+.about-me-info h3 {
+  margin: 0.5rem 0 1rem;
+}
+
+.about-me-info h6 {
+  margin-bottom: 1.5rem;
+}
+
+.about-me-info p {
+  font-size: 1.05rem;
+  line-height: 1.7;
+}
+
+#print-cv {
+  background-color: var(--color-white);
+  border: none;
+  color: var(--color-primary);
+}
+
+#print-cv:hover {
+  background-color: var(--color-primary);
+  color: var(--color-white);
+  padding: 8px 30px;
+}
+
+/* ==================== service section start ==================== */
+#service {
+  background-color: #f7f7f7a8;
+}
+
+.section-header {
+  text-align: center;
+  padding: 3rem 0;
+}
+
+.section-header > h6 {
+  font-size: 1.2rem;
+}
+
+.service-box {
+  padding: 2rem;
+  border: none;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.icon-image {
+  width: 85px;
+  height: 85px;
+  border: 1px dashed #75828373;
+  border-radius: 50%;
+  display: inline-grid;
+  place-items: center;
+}
+
+.service-list {
+  width: 90%;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  margin: 1rem auto 1.5rem;
+  padding-left: 0;
+}
+
+.service-item {
+  color: var(--color-gray);
+  font-weight: 300;
+}
+
+.service-box h4 {
+  position: relative;
+}
+
+.service-box h4::after {
+  content: "";
+  position: absolute;
+  width: 70px;
+  height: 2px;
+  background-color: var(--color-secondary);
+  bottom: 0;
+  left: 50%;
+  transform: translate(-50%, 50%);
+}
+
+.service-box p {
+  text-align: center;
+  font-family: "Poppins", sans-serif;
+  line-height: 1.8;
+}
+
+#service-development-skills {
+  background: linear-gradient(#0d21295c, #000000a6),
+    url("https://themetum.com/koyta/koyta-two/assets/img/02_koyta_img/parallax-skill.jpg");
+  background-position: center;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.about-myservice {
+  padding: 4rem 0;
+}
+
+.about-mydesign-header {
+  font-size: 1.6rem;
+  font-weight: 700;
+  color: var(--color-white);
+}
+
+.skill-item {
+  position: relative;
+  list-style: none;
+  padding: 1.5rem 0;
+}
+
+.skill-item::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 5px;
+  background-color: var(--color-gray);
+  bottom: 0;
+  left: 0;
+  z-index: 3;
+}
+.skill-item::after {
+  content: "";
+  position: absolute;
+  width: 80%;
+  height: 5px;
+  background-color: var(--color-white);
+  bottom: 0;
+  left: 0;
+  z-index: 3;
+}
+
+.two::after {
+  width: 90%;
+}
+
+.three::after {
+  width: 90%;
+}
+
+.skill {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.skill > h6 {
+  color: var(--color-white);
+  font-size: 1.15rem;
+  text-transform: uppercase;
+}
+
+.skill-name {
+  position: relative;
+}
+
+.skill-name::before {
+  content: "";
+  position: absolute;
+  background-color: var(--color-white);
+  width: 10px;
+  height: 10px;
+  top: 0;
+  left: 0%;
+  transform: translate(-30px, 50%);
+}
+
+.play-button i {
+  font-size: 1.8rem;
+}
+
+.about-mydesign-header {
+  padding: 1.5rem 0;
+}
+
+.about-myservice > p {
+  font-size: 1.1rem;
+}
+
+.achivement {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 1.5rem;
+}
+
+.achivement > h6 {
+  font-size: 1.1rem;
+  font-weight: 300;
+  line-height: 1.5;
+}
+
+/* =================== galary section =================== */
+#galary {
+  background-color: #c5c5c529;
+}
+
+.galary-nav {
+  text-align: center;
+}
+
+.galary-nav-links {
+  width: 100%;
+}
+
+.galary-nav-item {
+  display: inline-block;
+  padding: 0.1rem 0.5rem;
+}
+
+.gallary-box {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  background-color: var(--color-white);
+  cursor: pointer;
+}
+
+.gallary-box.card.h-100 {
+  border: none;
+}
+
+.position-absolute {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(45deg, rgb(0 0 0 / 66%), rgb(19 16 16 / 71%));
+  display: none;
+  top: 0;
+  left: 0;
+}
+
+.gallary-box:hover .position-absolute {
+  display: block;
+}
+
+.show {
+  position: absolute;
+  display: none;
+  font-family: "Fira Code", monospace;
+  font-size: 1rem;
+  color: var(--color-white);
+}
+
+.gallary-box:hover .show {
+  display: block;
+}
+
+#show-more {
+  display: inline-block;
+  font-family: "Fira Code", monospace;
+  font-weight: 500;
+  color: var(--color-secondary);
+  transition: all 300ms;
+  padding: 5px 10px;
+  cursor: pointer;
+}
+
+#show-more:hover {
+  color: var(--color-primary);
+  letter-spacing: 1px;
+}
+
+/* ================== pricing section start ================== */
+.price-box {
+  position: relative;
+  margin-bottom: 3.5rem;
+}
+
+.price-box::before {
+  content: "";
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075);
+  border-radius: 50%;
+  top: 0;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.price-icon {
+  position: absolute;
+  left: 50%;
+  top: 0;
+  transform: translate(-50%, -50%);
+}
+
+.price-item {
+  padding: 0.4rem 0;
+}
+
+.price-item i {
+  font-size: 1.2rem;
+  margin-right: 5px;
+}
+
+/* ================= contact section start ================= */
+#contact,
+#contact .section-header {
+  padding-top: 0;
+}
+
+.contact-icon {
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  display: inline-grid;
+  place-items: center;
+  box-shadow: var(--shadow-sm);
+}
+
+.contact-info > p {
+  margin-bottom: 0.6rem;
+  color: var(--color-gray);
+}
+
+input,
+textarea {
+  width: 100%;
+  padding: 15px;
+  margin-bottom: 1.5rem;
+  border: 1px solid #75828314;
+  box-shadow: var(--shadow-sm);
+}
+
+.name-male {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* ==================== footer section start ==================== */
+footer {
+  padding: 100px 0;
+  background-color: #242b2e;
+  color: var(--color-white);
+}
+
+.footer-nav-item {
+  margin: 0 0.5rem;
+  transition: all 300ms;
+}
+
+.footer-nav-item:hover a {
+  color: var(--color-primary);
+}
+
+.footer-nav-item a {
+  color: var(--color-white);
+}
+
+.social-item {
+  display: inline-block;
+  margin: 0 0.5rem;
+}
+
+.social-item a {
+  width: 2.5rem;
+  height: 2.5rem;
+  border: 1px solid var(--color-white);
+  color: var(--color-white);
+  border-radius: 50%;
+  display: inline-grid;
+  place-items: center;
+  transition: all 300ms;
+}
+
+.social-item a:hover {
+  border-color: var(--color-primary);
+}
+
+.social-item a i {
+  transition: all 300ms;
+}
+
+.social-item a:hover i {
+  color: var(--color-primary);
+}
+
+/* go to top */
+.go-top {
+  position: fixed;
+  right: 5%;
+  bottom: 5%;
+}
+
+.go-top a {
+  width: 2.5rem;
+  height: 2.5rem;
+  display: inline-grid;
+  place-items: center;
+  background-color: var(--color-primary);
+  border-radius: 50%;
+  color: var(--color-white);
+}
