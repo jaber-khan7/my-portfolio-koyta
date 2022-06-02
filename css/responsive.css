@@ -26,8 +26,12 @@
   .nav-item {
     width: 100%;
     text-align: center;
+    border-bottom: 1px solid #6d6d6d1a;
+  }
+
+  .nav-item a {
+    display: block;
     padding: 1rem 0;
-    box-shadow: 0 0.125rem 0.25rem rgb(0 0 0 / 3%);
   }
 
   #side-item {
@@ -99,8 +103,12 @@
   .nav-item {
     width: 100%;
     text-align: center;
+    border-bottom: 1px solid #6d6d6d1a;
+  }
+
+  .nav-item a {
+    display: block;
     padding: 1rem 0;
-    box-shadow: 0 0.125rem 0.25rem rgb(0 0 0 / 3%);
   }
 
   .side-bar-icons {
@@ -152,8 +160,12 @@
   .nav-item {
     width: 100%;
     text-align: center;
+    border-bottom: 1px solid #6d6d6d1a;
+  }
+
+  .nav-item a {
+    display: block;
     padding: 1rem 0;
-    box-shadow: 0 0.125rem 0.25rem rgb(0 0 0 / 3%);
   }
 
   #side-item {
